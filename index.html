@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style type="text/css">
+    #clear_button{
+      animation: rainbow 2s linear 2s infinite;
+    }
+
+    @keyframes rainbow {
+    0% {background: #e4541f;}
+    50% {background: #ff0000;}
+    100% {background: #e4541f;}
+    }
+
+    #note_text {
+      width: 250px;
+    }
+    ul {
+      width: 550px;
+    }
+    li {
+      display: inline-block;
+      list-style: none;
+      width: 150px;
+      height: 150px;
+      border: 1px dotted grey;
+      margin: 15px;
+    }
+    .sticky {
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+
+  <form>
+
+    <!-- <select id="note_color">
+      <option value="grey">grey</option>
+      <option value="yellow">yellow</option>
+      <option value="green">green</option>
+      <option value="red">red</option>
+      <option value="orange">orange</option>
+    </select> -->
+    <input type="text" id="note_text" placeholder="4irkani stro4ky">
+    <input type="button" id="add_button" value="zameto4ka">
+    <input type="button" id="clear_button" value="ybrat vse zameto4ki">
+    <input type="text" id="search" placeholder="searching">
+  </form>
+  <ul id="simpleList" class="editor">
+
+  </ul>
+  <textarea name="content" id="editor">
+
+  </textarea>
+<script src="https://cdn.ckeditor.com/ckeditor5/1.0.0-alpha.1/classic/ckeditor.js"></script>
+<script src="sortabel.js"></script>
+<script src="master.js"></script>
+</body>
+</html>
